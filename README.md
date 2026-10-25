@@ -20,7 +20,3 @@ A collection of small HTML practice tasks. Each task is one `.html` file.
 1. Open the folder in VS Code.
 2. Right-click a `.html` file and choose **Open with Live Server**.
 3. Or double-click the file to open it in the browser.
-
-## Author
-
-Bhanusri Manukonda
