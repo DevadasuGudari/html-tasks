@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        header {
+            background-color: rgb(74, 71, 71);
+            display: flex;
+        }
+
+        nav {
+            margin-left: 200px;
+            padding: 35px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 50px;
+            font-size: 20px;
+        }
+
+        nav a:hover {
+            color: orangered;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 5px;
+            padding: 40px;
+            background-color: #000;
+            color: lightgray;
+            flex-wrap: wrap;
+        }
+
+        .footer-img p {
+            width: 350px;
+            line-height: 1.5;
+            text-align: justify;
+            font-size: 18px;
+        }
+        .footer-dec1 ul{
+            padding: 5px;
+        }
+
+        .footer-dec1 ul li a {
+            text-decoration: none;
+            line-height: 1.6;
+            font-size: 18px;
+            color: lightgray;
+        }
+        .footer-dec1 ul li a:hover{
+            color: orangered;
+        }
+        .courses-info ul {
+            list-style-type: none;
+            padding: 5px;
+        }
+        .courses-info ul li a {
+            text-decoration: none;
+            line-height: 1.6;
+            font-size: 18px;
+            color: lightgray;
+        }
+        .courses-info ul li a:hover{
+            color: orangered;
+        }
+        .contact-info ul li{
+            width: 400px;
+            line-height: 2;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://lms.achieversit.com/assets/images/logo.png" alt="">
+        <nav>
+            <a href="#">All Courses</a>
+            <a href="#">Placements</a>
+            <a href="#">Internships</a>
+            <a href="#">Students</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Reviews</a>
+            <a href="#">Blogs</a>
+        </nav>
+    </header>
+
+    <div class="gallery">
+        <img src="../images/apj.avif" alt="APJ Abdul Kalam">
+        <img src="../images/nature-3082832_960_720.jpg" alt="Nature">
+        <img src="../images/medium-swami-vivekanand-on-good-quality-hd-quality-wallpaper-original-imagbukjjjvffwdc.webp"
+            alt="Swami Vivekananda">
+        <img src="../images/download.jpg" alt="">
+        <img src="../images/download (9).jpg" alt="">
+        <img src="../images/download (8).jpg" alt="">
+        <img src="../images/download (7).jpg" alt="">
+        <img src="../images/download (6).jpg" alt="">
+        <img src="../images/download (5).jpg" alt="">
+        <img src="../images/download (4).jpg" alt="">
+        <img src="../images/download (3).jpg" alt="">
+        <img src="../images/download (2).jpg" alt="">
+    </div>
+
+    <footer>
+        <div class="footer-img">
+            <img src="https://lms.achieversit.com/assets/images/logo.png" alt="">
+            <p>AchieversIT - Provides a wide group of opportunities for freshers and Experienced candidate who can
+                develop their skills and build their career opportunities across multiple Companies.</p>
+        </div>
+        <div class="footer-dec1">
+            <h2>COMPANY</h2>
+            <ul type="none">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Placements</a></li>
+                <li><a href="#">Corporate Training</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="courses-info">
+            <h2>TRENDING COURSES</h2>
+            <ul>
+                <li><a href="#">UI Development Course</a></li>
+                <li><a href="#">Angular JS Course</a></li>
+                <li><a href="#">React JS Course</a></li>
+                <li><a href="#">Digital Marketing Course</a></li>
+                <li><a href="#">Python Course</a></li>
+            </ul>
+        </div>
+        <div class="contact-info">
+            <h2>CONTACT INFO</h2>
+            <ul type="none">
+                <li>#63, 1st Floor, 16th Main, 8th Cross,BTM 1st Stage, Bangalore, India - 560029</li>
+                <li>India : +91 9740225633</li>
+                <li>info@achieversit.com</li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

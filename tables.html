@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #e3f2fd, #f8f9fa);
+            padding: 5px;
+        }
+
+        .container {
+            background: linear-gradient(to right, #f8f9fa, #e9ecef);
+            border-radius: 15px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffff;
+            background: linear-gradient(90deg, #1e3c72, #2a5298);
+            padding: 12px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+        }
+
+        .table1 {
+            border-collapse: collapse;
+            border-color: #000;
+        }
+
+        .table1 th {
+            background: #2563eb;
+            padding: 12px;
+        }
+
+        .table2 {
+            border-collapse: collapse;
+            border-color: #000;
+            margin-left: 25%;
+        }
+
+        .table2 th {
+            color: white;
+            background: #16a34a;
+            padding: 12px;
+        }
+
+        .table3 {
+            border-collapse: collapse;
+            border-color: #000;
+        }
+
+        .table3 th {
+            color: white;
+            background: #9333ea;
+            padding: 12px;
+        }
+
+        .table1 td {
+            background: #eff6ff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .table1 td:hover {
+            background: #bfdbfe;
+        }
+
+        .table2 td {
+            background: #f0fdf4;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .table2 td:hover {
+            background: #bbf7d0;
+        }
+
+        .table3 td {
+            background: #faf5ff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .table3 td:hover {
+            background: #ddd6fe;
+        }
+
+        td,
+        th {
+            border: 1px solid #ddd;
+        }
+        tr {
+            
+            transition: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"></div>
+    <h1>Employee, Product & Course Information</h1>
+    <br>
+    <table class="table1" border="1">
+        <tr>
+            <th>Emp Id</th>
+            <th>Emp FirstName</th>
+            <th>Emp LastName</th>
+            <th>Emp Gender</th>
+            <th>Emp Department</th>
+            <th>Emp Salary</th>
+            <th>Emp JoinDate</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Ravi</td>
+            <td>Kumar</td>
+            <td>Male</td>
+            <td>IT</td>
+            <td>50000</td>
+            <td>2023-01-15</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Priya</td>
+            <td>Sharma</td>
+            <td>Female</td>
+            <td>HR</td>
+            <td>45000</td>
+            <td>2022-08-20</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Amit</td>
+            <td>Patel</td>
+            <td>Male</td>
+            <td>Finance</td>
+            <td>60000</td>
+            <td>2021-06-10</td>
+        </tr>
+        <tr>
+            <td>104</td>
+            <td>Sneha</td>
+            <td>Reddy</td>
+            <td>Female</td>
+            <td>Marketing</td>
+            <td>48000</td>
+            <td>2023-03-25</td>
+        </tr>
+        <tr>
+            <td>105</td>
+            <td>Vikram</td>
+            <td>Singh</td>
+            <td>Male</td>
+            <td>IT</td>
+            <td>55000</td>
+            <td>2022-11-05</td>
+        </tr>
+        <tr>
+            <td>106</td>
+            <td>Pooja</td>
+            <td>Gupta</td>
+            <td>Female</td>
+            <td>Sales</td>
+            <td>47000</td>
+            <td>2021-09-18</td>
+        </tr>
+        <tr>
+            <td>107</td>
+            <td>Arjun</td>
+            <td>Mehta</td>
+            <td>Male</td>
+            <td>Operations</td>
+            <td>52000</td>
+            <td>2024-02-12</td>
+        </tr>
+        <tr>
+            <td>108</td>
+            <td>Anjali</td>
+            <td>Verma</td>
+            <td>Female</td>
+            <td>Finance</td>
+            <td>58000</td>
+            <td>2020-12-01</td>
+        </tr>
+        <tr>
+            <td>109</td>
+            <td>Karan</td>
+            <td>Rao</td>
+            <td>Male</td>
+            <td>Marketing</td>
+            <td>49000</td>
+            <td>2023-07-14</td>
+        </tr>
+        <tr>
+            <td>110</td>
+            <td>Divya</td>
+            <td>Nair</td>
+            <td>Female</td>
+            <td>HR</td>
+            <td>46000</td>
+            <td>2022-04-08</td>
+        </tr>
+    </table>
+    <br>
+
+    <table class="table2" border="1">
+        <tr>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Category</th>
+            <th>Brand</th>
+            <th>Price</th>
+            <th>Stock Quantity</th>
+            <th>Manufacturing Date</th>
+            <th>Supplier Name</th>
+        </tr>
+        <tr>
+            <td>P101</td>
+            <td>Laptop</td>
+            <td>Electronics</td>
+            <td>Dell</td>
+            <td>55000</td>
+            <td>25</td>
+            <td>2025-01-10</td>
+            <td>ABC Traders</td>
+        </tr>
+        <tr>
+            <td>P102</td>
+            <td>Smartphone</td>
+            <td>Electronics</td>
+            <td>Samsung</td>
+            <td>30000</td>
+            <td>50</td>
+            <td>2025-02-15</td>
+            <td>XYZ Distributors</td>
+        </tr>
+        <tr>
+            <td>P103</td>
+            <td>Headphones</td>
+            <td>Accessories</td>
+            <td>Sony</td>
+            <td>2500</td>
+            <td>100</td>
+            <td>2025-03-05</td>
+            <td>Tech Supplies</td>
+        </tr>
+        <tr>
+            <td>P104</td>
+            <td>Smart Watch</td>
+            <td>Wearables</td>
+            <td>Apple</td>
+            <td>35000</td>
+            <td>30</td>
+            <td>2025-01-25</td>
+            <td >Global Traders</td>
+        </tr>
+        <tr>
+            <td>P105</td>
+            <td>Keyboard</td>
+            <td>Accessories</td>
+            <td>Logitech</td>
+            <td>1500</td>
+            <td>75</td>
+            <td>2025-04-12</td>
+            <td>Prime Suppliers</td>
+        </tr>
+        <tr>
+            <td>P106</td>
+            <td>Mouse</td>
+            <td>Accessories</td>
+            <td>HP</td>
+            <td>800</td>
+            <td>120</td>
+            <td>2025-03-20</td>
+            <td>ABC Traders</td>
+        </tr>
+        <tr>
+            <td>P107</td>
+            <td>Tablet</td>
+            <td>Electronics</td>
+            <td>Lenovo</td>
+            <td>22000</td>
+            <td>40</td>
+            <td>2025-02-28</td>
+            <td>Tech Supplies</td>
+        </tr>
+        <tr>
+            <td>P108</td>
+            <td>Printer</td>
+            <td>Electronics</td>
+            <td>Canon</td>
+            <td>12000</td>
+            <td>15</td>
+            <td>2025-01-18</td>
+            <td>Global Traders</td>
+        </tr>
+        <tr>
+            <td>P109</td>
+            <td>Monitor</td>
+            <td>Electronics</td>
+            <td>LG</td>
+            <td>18000</td>
+            <td>20</td>
+            <td>2025-04-05</td>
+            <td>XYZ Distributors</td>
+        </tr>
+        <tr>
+            <td>P110</td>
+            <td>Speaker</td>
+            <td>Accessories</td>
+            <td>JBL</td>
+            <td>5000</td>
+            <td>60</td>
+            <td>2025-03-15</td>
+            <td>Prime Suppliers</td>
+        </tr>
+    </table>
+    <br>
+
+    <table class="table3" border="1" align="right">
+        <tr>
+            <th>Course ID</th>
+            <th>Course Name</th>
+            <th>Instructor Name</th>
+            <th>Duration</th>
+            <th>Fees</th>
+            <th>Mode</th>
+            <th>Start Date</th>
+            <th>Seats Available</th>
+        </tr>
+        <tr>
+            <td>C101</td>
+            <td>HTML</td>
+            <td>John</td>
+            <td>1 Month</td>
+            <td>5000</td>
+            <td>Online</td>
+            <td>01-07-2026</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>C102</td>
+            <td>CSS</td>
+            <td>David</td>
+            <td>1 Month</td>
+            <td>6000</td>
+            <td>Offline</td>
+            <td>05-07-2026</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>C103</td>
+            <td>JavaScript</td>
+            <td>Smith</td>
+            <td>2 Months</td>
+            <td>8000</td>
+            <td>Online</td>
+            <td>10-07-2026</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>C104</td>
+            <td>React JS</td>
+            <td>James</td>
+            <td>2 Months</td>
+            <td>12000</td>
+            <td>Offline</td>
+            <td>15-07-2026</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>C105</td>
+            <td>Core Java</td>
+            <td>Robert</td>
+            <td>3 Months</td>
+            <td>10000</td>
+            <td>Online</td>
+            <td>20-07-2026</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>C106</td>
+            <td>Advanced Java</td>
+            <td>Michael</td>
+            <td>3 Months</td>
+            <td>15000</td>
+            <td>Offline</td>
+            <td>25-07-2026</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>C107</td>
+            <td>SQL</td>
+            <td>William</td>
+            <td>1 Month</td>
+            <td>7000</td>
+            <td>Online</td>
+            <td>01-08-2026</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td>C108</td>
+            <td>Hibernate</td>
+            <td>Thomas</td>
+            <td>2 Months</td>
+            <td>9000</td>
+            <td>Offline</td>
+            <td>05-08-2026</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>C109</td>
+            <td>Spring</td>
+            <td>Daniel</td>
+            <td>2 Months</td>
+            <td>11000</td>
+            <td>Online</td>
+            <td>10-08-2026</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>C110</td>
+            <td>Spring Boot</td>
+            <td>Joseph</td>
+            <td>3 Months</td>
+            <td>16000</td>
+            <td>Offline</td>
+            <td>15-08-2026</td>
+            <td>12</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
